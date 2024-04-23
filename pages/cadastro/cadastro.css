@@ -8,6 +8,15 @@
 }
 
 .cadastro__header {
+    width: 100%;
     background-color: var(--light-color);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+}
+
+.cadastro__header__logo {
+    height: 5vh;
 }
 
