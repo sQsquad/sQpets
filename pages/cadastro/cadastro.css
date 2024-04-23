@@ -1,0 +1,13 @@
+:root {
+    --bg-color-dark: rgba(11, 53, 83, 1);
+    --light-color: rgba(232, 252, 255, 1);
+    --destaque-bright: rgba(243, 113, 45, 1);
+    --destaque-blue: rgba(47, 174, 191, 1);
+    --titulo: rgba(190, 247, 255, 1);
+
+}
+
+.cadastro__header {
+    background-color: var(--light-color);
+}
+
