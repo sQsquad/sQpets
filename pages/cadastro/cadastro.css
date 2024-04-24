@@ -16,7 +16,21 @@
     padding-left: 5vw;
 }
 
-.cadastro__header__logo {
+.cadastro__header--logo {
     height: 5vh;
+}
+
+.cadastro__main {
+    background-color: var(--bg-color-dark);
+    width: 100%;
+    display: flex;
+}
+
+.cadastro__main--img {
+    width: 80%;
+}
+
+.cadastro__main--form {
+    width: 20%;
 }
 
