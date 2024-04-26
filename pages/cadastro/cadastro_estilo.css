@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+
 :root {
     --bg-color-dark: rgba(11, 53, 83, 1);
     --light-color: rgba(232, 252, 255, 1);
     --destaque-bright: rgba(243, 113, 45, 1);
     --destaque-blue: rgba(47, 174, 191, 1);
     --titulo: rgba(190, 247, 255, 1);
-
+    --font: "Zen Maru Gothic", serif;
 }
 
 .cadastro__header {
-    width: 100%;
     background-color: var(--light-color);
     height: 10vh;
     display: flex;
@@ -21,16 +23,38 @@
 }
 
 .cadastro__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
     background-color: var(--bg-color-dark);
-    width: 100%;
+    font-family: var(--font);
+}
+.cadastro__main--imagem{
+    width: 50%;
     display: flex;
 }
-
 .cadastro__main--img {
-    width: 80%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .cadastro__main--form {
-    width: 20%;
+    width: 50%; 
 }
 
+.cadastro__main--form--titulo {
+    color: var(--titulo);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 5.79rem;
+    text-align: center;
+}
+
+.cadastro__main--input {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    width: 80%;
+}
