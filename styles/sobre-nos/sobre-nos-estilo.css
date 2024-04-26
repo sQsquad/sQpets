@@ -1,0 +1,68 @@
+body {
+    background-color: white;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 95%;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-equipe {
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.container-titulo {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 92.67px;
+    letter-spacing: 5px;
+    color: #1A364A;
+}
+
+.container-button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+
+.container-button button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.container-button button:hover {
+    color: #1A364A;
+}
+
+.container-button button h3 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 69.5px;
+    letter-spacing: 5px;
+}
