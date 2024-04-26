@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    background-color:  #1A364A;
+    font-family: "Zen Maru Gothic", serif;
+}
+
+.dados-usuario__topo {
+    width: 100%;
+    background-color:  #E8FCFF;
+    height: 10vh;
+}
+
+.dados-usuario__topo--barra a {
+    text-decoration: none;
+}
+
+.dados-usuario__topo--barra .topo-img {
+    width: 180px;
+    margin: 10px;
+}
+
+.dados-usuario__container {
+    width: 100%;
+}
+
+.dados-usuario__container--box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.dados-usuario__container--imagem {
+    position: relative;
+}
+
+.dados-usuario__container--imagem img {
+    width: 300px;
+    height: 300px;
+    margin-right: 150px;
+}
+
+.dados-usuario__container--imagem .image-edit {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 240px;
+    bottom: 30px;
+    opacity: 0.8;
+}
+
+.dados-usuario__container--imagem .image-edit:hover {
+    opacity: 1;
+}
+
+.dados-usuario__container--dados  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #BEF7FF;
+    margin: 20px;
+    text-align: center;
+}
+
+.dados-usuario__container--formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    gap: 20px;
+}
+
+.dados-usuario__container--formulario input {
+    width: 340px;
+    height: 35px;
+    border: 3px solid #326286;
+    border-radius: 7px;
+    background-color: #274B64;
+    padding: 10px 10px 0 10px;
+    font-size: 20px;
+    color: #BEF7FF;
+    line-height: 52.3px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.texto-final::-webkit-input-placeholder {
+    text-align: right;
+}
+
+ ::-webkit-input-placeholder {
+    text-align: left;
+    color: #BEF7FF;
+}
+
+.dados-usuario__container--formulario button {
+    width: 365px;
+    height: 40px;
+    padding-bottom: 25px 0;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #2FAEBF9F;
+    color: #FFFFFF;
+    border-radius: 7px;
+    border: 3px solid #2FAEBF9F;
+}
+
+.dados-usuario__container--formulario button:hover {
+    background-color: #2FAEBF;
+    border: 3px solid #2FAEBF;
+
+}
+
+@media (max-width: 768px) {
+    .dados-usuario__container--box {
+        margin: 50px 0 0 25%;
+    }
+
+    .dados-usuario__container--imagem {
+        margin-left: 34px;
+    }
+}
+
+@media (max-width: 428px) {
+    main {
+        width: 100%;
+    }
+
+    .dados-usuario__container--box {
+        margin:50px 0 0 10px;
+    }
+
+    .dados-usuario__container--imagem  img {
+        margin: 0;
+    }
+
+    .dados-usuario__container--dados {
+        width: 100%;
+    }
+
+    .dados-usuario__container--formulario input {
+        width: 90%;
+    }
+
+    .dados-usuario__container--formulario button {
+        width: 97%;
+        margin-bottom: 15px;
+    }
+}
