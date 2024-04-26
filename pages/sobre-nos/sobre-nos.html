@@ -5,27 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
     <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/sobre-nos/sobre-nos-estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <h1>
+        <h1 class="logo">
             <img src="/src/imagens/logo3-sobrenos.png" alt="Logo sQsquad">
         </h1>
-        <section>
-            <h2>Conheça nossa equipe!</h2>
-            <div>
-                <button onclick="">
-                    <img src="/src/imagens/cap-original-sobrenos.png" alt="Capivara Fundadores">
-                    <h3>Fundadores</h3>
-                </button>
-                <button onclick="">
-                    <img src="/src/imagens/cap-backend-sobrenos.png" alt="Capivara Front-end">
-                    <h3>Front-end</h3>
-                </button>
-                <button onclick="">
-                    <img src="/src/imagens/cap-frontend-sobrenos.png" alt="Capivara Back-end">
-                    <h3>Back-end</h3>
-                </button>
+        <section class="container">
+            <div class="container-equipe">
+                <h2 class="container-titulo">Conheça nossa equipe!</h2>
+                <div class="container-button">
+                    <button>
+                        <img src="/src/imagens/cap-original-sobrenos.png" alt="Capivara Fundadores" width="250px">
+                        <h3>Fundadores</h3>
+                    </button>
+                    <button>
+                        <img src="/src/imagens/cap-backend-sobrenos.png" alt="Capivara Front-end" width="250px">
+                        <h3>Front-end</h3>
+                    </button>
+                    <button>
+                        <img src="/src/imagens/cap-frontend-sobrenos.png" alt="Capivara Back-end" width="250px">
+                        <h3>Back-end</h3>
+                    </button>
+                </div>
+            </div>
                 <div>
                     <!-- Fundadores -->
                     <div>
@@ -41,7 +48,6 @@
                 <div>
                     <!-- Back-end -->
                 </div>
-            </div>
         </section>  
     </main>
 </body>
