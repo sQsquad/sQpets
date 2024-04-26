@@ -32,6 +32,7 @@ main {
     justify-content: space-between;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 2px;
+    margin-bottom: 50px;
 }
 
 .container-titulo {
@@ -65,4 +66,22 @@ main {
     font-weight: 400;
     line-height: 69.5px;
     letter-spacing: 5px;
+}
+
+.container-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imagem-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+
+.infos-perfil {
+    display: flex;
+    flex-direction: row;
 }
