@@ -72,6 +72,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    width: 15%;
 }
 
 .imagem-perfil {
@@ -84,4 +86,15 @@ main {
 .infos-perfil {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.infos-perfil--nome {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 69.5px;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: #000000;
 }
