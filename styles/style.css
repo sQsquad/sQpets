@@ -92,7 +92,7 @@ body{
     border-radius: 8px;
     width: 10rem;
     height: 3rem;
-
+    cursor: pointer;
 }
 
 .principal__texto__btnCadastrar {
@@ -105,10 +105,15 @@ body{
     border-radius: 8px;
     width: 16rem;
     height: 3rem;
+    cursor: pointer;
 }
 
 
 @media screen and (min-width: 640px) {
+
+    body {
+        gap: 0px;
+    }
 
     .cabecalho__logo {
         width: 160px;
