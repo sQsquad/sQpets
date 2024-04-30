@@ -7,6 +7,8 @@
     --destaque-bright: rgba(243, 113, 45, 1);
     --destaque-blue: rgba(47, 174, 191, 1);
     --titulo: rgba(190, 247, 255, 1);
+    --form-border-color: rgba(50, 98, 134, 1);
+    --form-bg: rgba(39, 75, 100, 1);
     --font: "Zen Maru Gothic", serif;
 }
 
@@ -30,7 +32,7 @@
     background-color: var(--bg-color-dark);
     font-family: var(--font);
 }
-.cadastro__main--imagem{
+.cadastro__main--imagemDiv{
     width: 50%;
     display: flex;
 }
@@ -41,14 +43,15 @@
 
 .cadastro__main--form {
     width: 50%; 
+    margin: 0 auto;
 }
 
 .cadastro__main--form--titulo {
     color: var(--titulo);
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 700;
-    line-height: 5.79rem;
-    text-align: center;
+    line-height: 5.79em;
+    margin: 0 auto;
 }
 
 .cadastro__main--input {
@@ -57,4 +60,21 @@
     width: 80%;
     margin: 0 auto;
     width: 80%;
+}
+
+.cadastro__main--campo {
+    background-color: var(--form-bg);
+    margin: 15px;
+    border: 3px solid var(--form-border-color);
+    height: 85px;
+    border-radius: 10px;
+}
+
+.cadastro__main--campo::placeholder {
+    font-family: var(--font);
+    font-size: 2.25em;
+    color: var(--titulo);
+    font-weight: 700;
+    padding-left: 5px;
+    float: left;
 }
