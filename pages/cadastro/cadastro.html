@@ -13,38 +13,40 @@
         <img src="/src/imagens/sQpets.png" alt="sQpets logo" class="cadastro__header--logo">
     </header>
 
-    <main class="cadastro__main">
-        <!--imagem de boas vindas-->
-        <div class="cadastro__main--div">
-            <img src="/src/imagens/golfinho-ilustracao-homepage.png" alt="imagem golfinho azul" class="cadastro__main--img">
-        </div>
-
-        <!--formulário de cadastro-->
-        <div class="cadastro__formulario">
-            <form action="" class="cadastro__form">
-
-                <span class="cadastro__form--titulo">Cadastre-se!</span>
-
-                <input class="cadastro__form--input" type="text" name="nome" id="nome" placeholder="Nome completo" aria-label="nome completo" required>
-                <input class="cadastro__form--input" type="email" name="email" id="email" placeholder="E-mail"  aria-label="email" required>
-                <input class="cadastro__form--input" type="password" name="password" id="password" placeholder="Senha" aria-label="senha" required>
-                <input class="cadastro__form--input" type="password" name="password_repeat" id="password_repeat" placeholder="Confirme a senha" required>
-
-                <div class="cadastro__form--link-group">
-                        <label for="termos" class="cadastro__form--label">Li os termos
-                            <input type="checkbox" name="termos" id="termos">
-                            <span class="cadastro__form--checkmark"></span>
-                        </label>
-                    <!--ALTERAR LINK PARA PÁGINA-->
-                    <a href="#" class="cadastro__form--link">Já tenho conta!</a>
+    
+        <main class="cadastro__main">
+            <section class="cadastro__main--container">
+                <!--imagem de boas vindas-->
+                <div class="cadastro__main--div">
+                    <img src="/src/imagens/golfinho-ilustracao-homepage.png" alt="imagem golfinho azul" class="cadastro__main--img">
                 </div>
-
-                <div class="cadastro__form--button">
-                    <button class="cadastro__form--btn">Criar conta</button>
+                <!--formulário de cadastro-->
+                <div class="cadastro__formulario">
+                    <form action="" class="cadastro__form">
+                        <span class="cadastro__form--titulo">Cadastre-se!</span>
+                        <input class="cadastro__form--input" type="text" name="nome" id="nome" placeholder="Nome completo" aria-label="nome completo" required>
+                        <input class="cadastro__form--input" type="email" name="email" id="email" placeholder="E-mail"  aria-label="email" required>
+                        <input class="cadastro__form--input" type="password" name="password" id="password" placeholder="Senha" aria-label="senha" required>
+                        <input class="cadastro__form--input" type="password" name="password_repeat" id="password_repeat" placeholder="Confirme a senha" required>
+                        <!--checkbox-->
+                        <div class="cadastro__form--link-group">
+                            <div class="cadastro__form--checkbox">
+                                <input class="cadastro__form--field" type="checkbox" name="termos" id="termos">
+                                <label for="termos" class="cadastro__form--label">Li os termos</label>
+                            </div>
+            
+            
+                            <!--ALTERAR LINK PARA PÁGINA-->
+                            <a href="#" class="cadastro__form--link">Já tenho conta!</a>
+                        </div>
+                        <!--botão-->
+                            <button class="cadastro__form--btn" type="submit">Criar conta</button>
+            
+                    </form>
                 </div>
-            </form>
-        </div>
-    </main>
+            </section>
+        </main>
+    
     
 </body>
 </html>
