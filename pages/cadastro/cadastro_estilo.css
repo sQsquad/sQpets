@@ -12,6 +12,7 @@
     --font: "Zen Maru Gothic", serif;
 }
 
+/* HEADER */
 .cadastro__header {
     background-color: var(--light-color);
     height: 10vh;
@@ -24,6 +25,7 @@
     height: 5vh;
 }
 
+/* IMAGEM MAIN */
 .cadastro__main {
     display: flex;
     justify-content: center;
@@ -32,7 +34,7 @@
     background-color: var(--bg-color-dark);
     font-family: var(--font);
 }
-.cadastro__main--imagemDiv{
+.cadastro__main--div{
     width: 50%;
     display: flex;
 }
@@ -41,20 +43,22 @@
     margin: 0 auto;
 }
 
-.cadastro__main--form {
+/* FORMULARIO */
+.cadastro__formulario {
     width: 50%; 
     margin: 0 auto;
 }
 
-.cadastro__main--form--titulo {
+.cadastro__form--titulo {
+    width: 100%;
+    text-align: center;
     color: var(--titulo);
     font-size: 3em;
     font-weight: 700;
     line-height: 5.79em;
-    margin: 0 auto;
 }
 
-.cadastro__main--input {
+.cadastro__form {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -62,7 +66,7 @@
     width: 80%;
 }
 
-.cadastro__main--campo {
+.cadastro__form--input {
     background-color: var(--form-bg);
     margin: 15px;
     border: 3px solid var(--form-border-color);
@@ -70,11 +74,45 @@
     border-radius: 10px;
 }
 
-.cadastro__main--campo::placeholder {
+.cadastro__form--input::placeholder {
     font-family: var(--font);
     font-size: 2.25em;
     color: var(--titulo);
     font-weight: 700;
     padding-left: 5px;
     float: left;
+}
+
+.cadastro__form--link-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    font-family: var(--font);
+    font-size: 2em;
+    line-height: 2.89em;
+}
+
+.cadastro__form--label {
+    color: var(--destaque-blue);
+    font-weight: 700;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+.cadastro__form--label input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+
+.cadastro__form--checkmark {
+    position: absolute;
+}
+
+.cadastro__form--link {
+    text-decoration: none;
+    color: var(--destaque-bright);
 }
