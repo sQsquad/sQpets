@@ -11,39 +11,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <main class="main">
         <h1 class="logo">
             <img src="/src/imagens/logo3-sobrenos.png" alt="Logo sQsquad">
         </h1>
         <section class="container">
-            <div class="container-equipe">
-                <h2 class="container-titulo">Conheça nossa equipe!</h2>
-                <div class="container-button">
-                    <button>
-                        <img src="/src/imagens/cap-original-sobrenos.png" alt="Capivara Fundadores">
-                        <h3>Fundadores</h3>
+            <div class="container__equipe">
+                <h2 class="container__titulo">Conheça nossa equipe!</h2>
+                <div class="container__button">
+                    <button class="button">
+                        <img src="/src/imagens/cap-original-sobrenos.png" alt="Capivara Fundadores" class="button__img">
+                        <h3 class="button__text">Fundadores</h3>
                     </button>
-                    <button>
-                        <img src="/src/imagens/cap-backend-sobrenos.png" alt="Capivara Front-end">
-                        <h3>Front-end</h3>
+                    <button class="button">
+                        <img src="/src/imagens/cap-backend-sobrenos.png" alt="Capivara Front-end" class="button__img">
+                        <h3 class="button__text">Front-end</h3>
                     </button>
-                    <button>
-                        <img src="/src/imagens/cap-frontend-sobrenos.png" alt="Capivara Back-end">
-                        <h3>Back-end</h3>
+                    <button class="button">
+                        <img src="/src/imagens/cap-frontend-sobrenos.png" alt="Capivara Back-end" class="button__img">
+                        <h3 class="button__text">Back-end</h3>
                     </button>
                 </div>
             </div>
         </section>
 
         <section class="container">
-            <h2 class="container-titulo">Fundadores</h2>
-            <div class="container-equipe equipe">
-                <div class="container-perfil perfil-1">
-                    <div class="imagem-perfil">
+            <h2 class="container__titulo">Fundadores</h2>
+            <div class="container__equipe equipe">
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
                         <img src="" alt="">
                     </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
+                        <a href="">
+                            <img src="/src/imagens/in.png" alt="logo do LinkedIn">
+                        </a>
+                        <a href="">
+                            <img src="/src/imagens/git.png" alt=" logo do GitHub">
+                        </a>
+                    </div>
+                    <p class="perfil__descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
+                        <img src="" alt="">
+                    </div>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
                         <a href="">
                             <img src="/src/imagens/in.png" alt="logo do LinkedIn">
                         </a>
@@ -53,27 +68,12 @@
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="container-perfil perfil-1">
-                    <div class="imagem-perfil">
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
                         <img src="" alt="">
                     </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
-                        <a href="">
-                            <img src="/src/imagens/in.png" alt="logo do LinkedIn">
-                        </a>
-                        <a href="">
-                            <img src="/src/imagens/git.png" alt=" logo do GitHub">
-                        </a>
-                    </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="container-perfil perfil-1">
-                    <div class="imagem-perfil">
-                        <img src="" alt="">
-                    </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
                         <a href="">
                             <img src="/src/imagens/in.png" alt="logo do LinkedIn">
                         </a>
@@ -87,14 +87,14 @@
         </section>
 
         <section class="container">
-            <h2 class="container-titulo">Front-end</h2>
-            <div class="container-equipe equipe">
-                <div class="container-perfil perfil-1">
-                    <div class="imagem-perfil">
+            <h2 class="container__titulo">Front-end</h2>
+            <div class="container__equipe equipe">
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
                         <img src="" alt="">
                     </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
                         <a href="">
                             <img src="/src/imagens/in.png" alt="logo do LinkedIn">
                         </a>
@@ -104,12 +104,12 @@
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="container-perfil perfil-1">
-                    <div class="imagem-perfil">
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
                         <img src="" alt="">
                     </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
                         <a href="">
                             <img src="/src/imagens/in.png" alt="logo do LinkedIn">
                         </a>
@@ -119,12 +119,12 @@
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="container-perfil perfil-1">
-                    <div class="imagem-perfil">
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
                         <img src="" alt="">
                     </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
                         <a href="">
                             <img src="/src/imagens/in.png" alt="logo do LinkedIn">
                         </a>
@@ -134,12 +134,12 @@
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="container-perfil perfil-1">
-                    <div class="imagem-perfil">
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
                         <img src="" alt="">
                     </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
                         <a href="">
                             <img src="/src/imagens/in.png" alt="logo do LinkedIn">
                         </a>
@@ -149,12 +149,12 @@
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="container-perfil perfil-1">
-                    <div class="imagem-perfil">
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
                         <img src="" alt="">
                     </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
                         <a href="">
                             <img src="/src/imagens/in.png" alt="logo do LinkedIn">
                         </a>
@@ -168,14 +168,14 @@
 
         <section class="container">
             </div>
-            <h2 class="container-titulo">Back-end</h2>
-            <div class="container-equipe equipe-2">
-                <div class="container-perfil perfil">
-                    <div class="imagem-perfil">
+            <h2 class="container__titulo">Back-end</h2>
+            <div class="container__equipe equipe-2">
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
                         <img src="" alt="">
                     </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
                         <a href="">
                             <img src="/src/imagens/in.png" alt="logo do LinkedIn">
                         </a>
@@ -185,12 +185,12 @@
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="container-perfil perfil">
-                    <div class="imagem-perfil">
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
                         <img src="" alt="">
                     </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
                         <a href="">
                             <img src="/src/imagens/in.png" alt="logo do LinkedIn">
                         </a>
@@ -200,12 +200,12 @@
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="container-perfil perfil">
-                    <div class="imagem-perfil">
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
                         <img src="" alt="">
                     </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
                         <a href="">
                             <img src="/src/imagens/in.png" alt="logo do LinkedIn">
                         </a>
@@ -215,12 +215,12 @@
                     </div>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="container-perfil perfil">
-                    <div class="imagem-perfil">
+                <div class="container__perfil perfil">
+                    <div class="perfil__imagem">
                         <img src="" alt="">
                     </div>
-                    <div class="infos-perfil">
-                        <a href="" class="infos-perfil--nome">Nome</a>
+                    <div class="perfil__infos infos">
+                        <a href="" class="infos__nome">Nome</a>
                         <a href="">
                             <img src="/src/imagens/in.png" alt="logo do LinkedIn">
                         </a>
