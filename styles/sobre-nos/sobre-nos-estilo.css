@@ -14,6 +14,8 @@ main {
 }
 
 .logo {
+    display: flex;
+    justify-content: left;
     margin: 10px;
 }
 
@@ -139,4 +141,19 @@ main {
     line-height: 20px;
     text-align: center;
     padding-left: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .logo {
+        justify-content: center;
+    }
+
+    .logo img {
+        max-width: 100%;
+    }
+
+    .container__titulo {
+        font-size: 35px;
+        line-height: 50px;
+    }
 }
