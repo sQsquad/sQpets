@@ -28,9 +28,10 @@ main {
 .container__equipe {
     max-width: 95%;
     width: 95%;
-    height: auto;
+    height: 90%;
     display: flex;
     flex-direction: column;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -77,25 +78,24 @@ main {
     letter-spacing: 5px;
 }
 
-.equipe {
+/* .equipe {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
     width: auto;
-}
+} */
 
-.equipe-2 {
+/* .equipe-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
     width: auto;
-}
+} */
 
-.perfil {
-    margin-left: 46px;
-    margin-right: 20px;
-}
+/* .perfil {
+    margin-left: auto;
+    margin-right: auto;
+} */
 
 .container__perfil {
     display: flex;
@@ -136,11 +136,10 @@ main {
     height: 30px;
 }
 
-.container__perfil p {
+.perfil__descricao  {
     width: 350px;
     line-height: 20px;
     text-align: center;
-    padding-left: 10px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
