@@ -22,7 +22,7 @@
     height: 10vh;
     display: flex;
     align-items: center;
-    padding-left: 126px;
+    padding-left: 10vw;
 }
 
 .cadastro__header--logo {
@@ -75,15 +75,15 @@
     height: 65px;
     border-radius: 10px;
     font-family: inherit;
-    color: var(--font);
+    color: var(--titulo);
     font-size: 2.25em;
     padding-left: 15px;
 }
 
-.cadastro__form--input:focus{
+.cadastro__form--input:focus {
     outline: none;
     border: 3px solid var(--destaque-bright);
-    color: var(--font);
+    color: var(--titulo);
 }
 
 .cadastro__form--input::-webkit-input-placeholder {
@@ -96,6 +96,7 @@
     justify-content: space-between;
     font-size: 2em;
     margin: 2vh 0;
+    align-items: center;
 }
 
 .cadastro__form--label {
@@ -104,8 +105,33 @@
     cursor: pointer;
 }
 
-.cadastro__form--field {
-    border: none;
+.cadastro__form--checkbox input {
+    display: none;
+    cursor: pointer;
+}
+.cadastro__form--checkbox input + label:before {
+    content: '';
+    cursor: pointer;
+    width: 37.5px;
+    height: 36.5px;
+    background-image: url('/src/imagens/unchecked-tarefa.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2vw;
+}
+
+.cadastro__form--checkbox input:checked + label:before {
+    width: 37.5px;
+    height: 36.5px;
+    cursor: pointer;
+    background-image: url('/src/imagens/check-tarefa.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2vw;
 }
 
 .cadastro__form--link {
@@ -114,9 +140,8 @@
 }
 
 .cadastro__form--btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     width: 100%;
     height: 74px;
     border: none;
@@ -125,7 +150,6 @@
     font-size: 3em;
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    margin: 15px 0;
 }
 
 .cadastro__form--btn:hover {
@@ -133,3 +157,71 @@
     border: 3px solid var(--destaque-blue);
     transition: all 0.2s;
 }
+
+@media (max-width:1145px) {
+    .cadastro__form--link-group {
+        font-size: 1.75em;
+    }
+}
+
+@media (max-width:1000px) {
+    .cadastro__header {
+        justify-content: center;
+        padding-left: 0;
+    }
+    .cadastro__form--titulo {
+        font-size: 2.5em;
+    }
+
+    .cadastro__form--input {
+        height: 55px;
+        font-size: 1.75em;
+    }
+
+    .cadastro__form--link-group {
+        flex-direction: column;
+    }
+    .cadastro__form--link {
+        margin: 2vh;
+    }
+    .cadastro__form--btn {
+        font-size: 2em;
+        height: 64px;
+    }
+}
+
+@media (max-width:580px) {
+    .cadastro__main--container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cadastro__main--div {
+        display: none;
+    }
+
+    .cadastro__formulario {
+        width: 90%;
+        margin-top: 2vh;
+    }
+    
+    .cadastro__form--input {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width:580px) {
+    .cadastro__form--titulo {
+        font-size: 1.7em;
+    }
+    .cadastro__form--input {
+        height: 45px;
+        font-size: 1.5em;
+        margin: 1vh 0;
+    }
+    .cadastro__form--link-group {
+        font-size: 1.5em;
+    }
+}
+
+
