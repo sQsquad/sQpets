@@ -24,18 +24,30 @@
                 <div class="cadastro__formulario">
                     <form action="" class="cadastro__form">
                         <span class="cadastro__form--titulo">Cadastre-se!</span>
-                        <input class="cadastro__form--input" type="text" name="nome" id="nome" placeholder="Nome completo" aria-label="nome completo" required>
-                        <input class="cadastro__form--input" type="email" name="email" id="email" placeholder="E-mail"  aria-label="email" required>
-                        <input class="cadastro__form--input" type="password" name="password" id="password" placeholder="Senha" aria-label="senha" required>
-                        <input class="cadastro__form--input" type="password" name="password_repeat" id="password_repeat" placeholder="Confirme a senha" required>
+                        <div class="cadastro__form--input-group">
+                            <input class="cadastro__form--input" type="text" name="nome" id="nome" aria-label="nome completo" required>
+                            <label for="nome" class="cadastro__form--label">Nome Completo</label>
+                        </div>
+                        <div class="cadastro__form--input-group">
+                            <input class="cadastro__form--input" type="email" name="email" id="email" aria-label="email" required>
+                            <label for="email" class="cadastro__form--label">E-mail</label>
+                        </div>
+                        <div class="cadastro__form--input-group">
+                            <input class="cadastro__form--input" type="password" name="senha" id="senha" aria-label="senha" required>
+                            <label for="senha" class="cadastro__form--label">Senha</label>
+                        </div>
+                        <div class="cadastro__form--input-group">
+                            <input class="cadastro__form--input" type="password" name="confirmar_senha" id="confirmar_senha" required>
+                            <label for="confirmar_senha" class="cadastro__form--label">Confirme a senha</label>
+                        </div>
                         <!--checkbox-->
                         <div class="cadastro__form--link-group">
                             <div class="cadastro__form--checkbox">
                                 <input class="cadastro__form--field" type="checkbox" name="termos" id="termos">
-                                <label for="termos" class="cadastro__form--label">Li os termos</label>
+                                <label for="termos" class="cadastro__form--label-check">Li os termos</label>
                             </div>
-            
-            
+
+        
                             <!--ALTERAR LINK PARA PÁGINA-->
                             <a href="#" class="cadastro__form--link">Já tenho conta!</a>
                         </div>
