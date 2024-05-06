@@ -9,7 +9,7 @@ body {
     height: 100vh;
 }
 
-main {
+.main {
     width: 95%;
 }
 
@@ -57,45 +57,25 @@ main {
     margin-top: 100px;
 }
 
-.container__button img {
+.button__img {
     width: 200px;
 }
 
-.container__button button {
+.button {
     border: none;
     background-color: white;
     cursor: pointer;
 }
 
-.container__button button:hover {
+.button:hover {
     color: #1A364A;
 }
 
-.container__button button h3 {
+.button__text {
     font-size: 35px;
-    font-weight: 400;
     line-height: 69.5px;
     letter-spacing: 5px;
 }
-
-/* .equipe {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    width: auto;
-} */
-
-/* .equipe-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-} */
-
-/* .perfil {
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 .container__perfil {
     display: flex;
@@ -124,14 +104,13 @@ main {
 
 .infos__nome {
     font-size: 30px;
-    font-weight: 400;
     line-height: 69.5px;
     letter-spacing: 5px;
     text-decoration: none;
     color: #000000;
 }
 
-.perfil__infos a img {
+.infos__logos {
     width: 30px;
     height: 30px;
 }
