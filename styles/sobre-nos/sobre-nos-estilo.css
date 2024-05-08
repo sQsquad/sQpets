@@ -73,6 +73,8 @@ body {
 
 .button__text {
     font-size: 35px;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
     line-height: 69.5px;
     letter-spacing: 5px;
 }
