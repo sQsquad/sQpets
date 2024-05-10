@@ -15,6 +15,9 @@
     font-family: var(--font);
     font-weight: 700;
 }
+html, body {
+    height: 100%;
+}
 
 /* HEADER */
 .cadastro__header {
@@ -32,17 +35,19 @@
 /* IMAGEM MAIN */
 .cadastro__main {
     background-color: var(--bg-color-dark);
+    padding-top: 10vh;
 }
 
 .cadastro__main--container {
     display: flex;
-    align-items: center;
-    height: 90vh;
+    height: 80vh;
 }
 
 .cadastro__main--div{
     width: 50%;
+    height: 80vh;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 .cadastro__main--img {
@@ -52,13 +57,14 @@
 /* FORMULARIO */
 .cadastro__formulario {
     width: 50%; 
+    height: 80vh;
 }
 
 .cadastro__form--titulo {
     text-align: center;
     color: var(--titulo);
     font-size: 3rem;
-    padding: 15px 0;
+    padding-bottom: 5vh;
 }
 
 .cadastro__form {
@@ -79,6 +85,7 @@
 .cadastro__form--input {
     border: solid 3px var(--form-border-color);
     border-radius: 1rem;
+    height: auto;
     width: 100%;
     background-color: var(--form-bg);
     padding: 1rem;
@@ -191,6 +198,15 @@
         justify-content: center;
         padding-left: 0;
     }
+
+    .cadastro__main{
+        padding-top: 6vh;
+    }
+
+    .cadastro__main--container {
+        height: 84vh;
+    }
+
     .cadastro__form--titulo {
         font-size: 2.5rem;
     }
@@ -230,7 +246,7 @@
     }
 
     .cadastro__formulario {
-        width: 90%;
+        width: 100%;
         margin-top: 2vh;
     }
     
