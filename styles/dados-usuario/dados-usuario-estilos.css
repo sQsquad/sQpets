@@ -17,7 +17,11 @@ body {
     padding: 20px 0 0 7%;
 }
 
-.dados-usuario__topo--barra img {
+.dados-usuario__topo--barra a {
+    text-decoration: none;
+}
+
+.dados-usuario__topo--barra a img {
     width: 25%;
 }
 
