@@ -14,33 +14,43 @@
 <body>
     <header class="dados-usuario__topo">
         <div class="dados-usuario__topo--barra">
-            <a href="/index.html">
-                <img class="topo-img" src="/src/imagens/logo-homapage.png" alt="logo homepage" title="logo homepage">
-            </a>
-
+            <img class="topo-img" src="/src/imagens/logo-homapage.png" alt="logo homepage" title="logo homepage">
         </div>
     </header>
 
     <main>
         <section class="dados-usuario__container">
             <div class="dados-usuario__container--box">
-                <div class="dados-usuario__container--imagem">
-                    <img src="/src/imagens/user_1-1.png" alt="image user " title="image user">
-                    <img class="image-edit" src="/src/imagens/edit.png" alt="image edit">
+                <div class="dados-usuario__container--esquerda">
+                    <div class="dados-usuario__container--imagem">
+                        <img src="/src/imagens/user_1-1.png" alt="image user " title="image user">
+                        <img class="image-edit" src="/src/imagens/edit.png" alt="image edit">
+                    </div>
                 </div>
-                <div class="dados-usuario__container--dados">
-                    <h1>Seus dados</h1>
-                    <form class="dados-usuario__container--formulario" action="">
-                        <input class="texto-final" type="text" name="nome" id="nome" placeholder="Capivara Junior da Silva">
-        
-                        <input class="texto-final" type="email" name="email" id="email" placeholder="capijr@email.com">
-        
-                        <input type="password" name="senha-atual" id="senha-atual" placeholder="senha atual">
-        
-                        <input type="password" name="nova-senha" id="nova-senha" placeholder="nova senha">
-        
-                        <button type="submit">Salvar</button>
-                    </form>
+                <div class="dados-usuario__container--direita">
+                    <div class="dados-usuario__container--dados">
+                        <h1>Seus dados</h1>
+                        <form class="dados-usuario__container--formulario">
+                            <div class="dados-usuario__container--input">
+                                <input class="texto-final" type="text" name="nome" id="nome" placeholder="Capivara Junior da Silva">
+                                <label class="input-label input-label--nome" for="nome">Nome Completo</label>
+                            </div>
+                            <div class="dados-usuario__container--input">
+                                <input class="texto-final" type="email" name="email" id="email" placeholder="capijr@email.com">
+                                <label class="input-label input-label--email" for="nome">E-mail</label>
+                            </div>
+                            <div class="dados-usuario__container--input">
+                                <input type="password" name="senha-atual" id="senha-atual" placeholder="senha atual">
+                                <label class="input-label" for="nome">Senha Atual</label>
+                            </div>
+                            <div class="dados-usuario__container--input">
+                                <input type="password" name="nova-senha" id="nova-senha" placeholder="nova senha">
+                                <label class="input-label" for="nome">Nova Senha</label>
+                            </div>
+            
+                            <button type="submit">Salvar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

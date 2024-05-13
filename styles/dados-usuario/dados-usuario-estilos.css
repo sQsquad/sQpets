@@ -1,93 +1,135 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 100%;
     width: 100%;
-    background-color:  #1A364A;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A364A;
     font-family: "Zen Maru Gothic", serif;
 }
 
 .dados-usuario__topo {
     width: 100%;
-    background-color:  #E8FCFF;
-    height: 10vh;
+    height: auto;
+    background-color: #E8FCFF;
 }
 
-.dados-usuario__topo--barra a {
-    text-decoration: none;
+.dados-usuario__topo--barra {
+    padding: 20px 0 0 7%;
 }
 
-.dados-usuario__topo--barra .topo-img {
-    width: 180px;
-    margin: 10px;
+.dados-usuario__topo--barra img {
+    width: 25%;
+}
+
+main {
+    width: 98%;
 }
 
 .dados-usuario__container {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 10%;
 }
 
 .dados-usuario__container--box {
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    margin: 60px 0 20px 30px;
 }
 
-.dados-usuario__container--imagem {
+.dados-usuario__container--esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+}
+
+.dados-usuario__container--esquerda .dados-usuario__container--imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     position: relative;
 }
 
-.dados-usuario__container--imagem img {
-    width: 300px;
-    height: 300px;
-    margin-right: 150px;
+.dados-usuario__container--esquerda .dados-usuario__container--imagem img {
+    width: 90%;
+    height: auto;
 }
 
-.dados-usuario__container--imagem .image-edit {
-    width: 40px;
-    height: 40px;
+.dados-usuario__container--esquerda .dados-usuario__container--imagem .image-edit {
+    width: 15%;
+    height: auto;
     position: absolute;
-    left: 240px;
-    bottom: 30px;
+    left: 74%;
+    bottom: 4%;
     opacity: 0.8;
+    cursor: pointer;
 }
 
-.dados-usuario__container--imagem .image-edit:hover {
+.dados-usuario__container--esquerda .dados-usuario__container--imagem .image-edit:hover {
     opacity: 1;
 }
 
-.dados-usuario__container--dados  h1 {
-    font-size: 40px;
+.dados-usuario__container--direita {
+    width: 50%;
+    height: auto;
+}
+
+.dados-usuario__container--direita .dados-usuario__container--dados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dados-usuario__container--direita .dados-usuario__container--dados h1 {
+    font-size: 30pt;
+    margin-bottom: 50px;
+    margin-left: 7px;
     font-weight: 700;
     color: #BEF7FF;
-    margin: 20px;
     text-align: center;
 }
 
-.dados-usuario__container--formulario {
+.dados-usuario__container--dados .dados-usuario__container--formulario {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 50%;
-    gap: 20px;
+    height: auto;
+    gap: 30px;
 }
 
-.dados-usuario__container--formulario input {
-    width: 340px;
-    height: 35px;
+.dados-usuario__container--formulario .dados-usuario__container--input {
+    position: relative;
+    width: 100%;
+}
+
+.dados-usuario__container--input input {
     border: 3px solid #326286;
     border-radius: 7px;
     background-color: #274B64;
     padding: 10px 10px 0 10px;
+    width: 95.8%;
     font-size: 20px;
     color: #BEF7FF;
     line-height: 52.3px;
     font-weight: 700;
     text-align: right;
+    outline: none;
+    transition: all .3s;
+}
+
+.dados-usuario__container--formulario input:focus {
+    border-color: #F3712D;
+    outline: none;
 }
 
 .texto-final::-webkit-input-placeholder {
@@ -99,10 +141,67 @@ body {
     color: #BEF7FF;
 }
 
+.dados-usuario__container--formulario .input-label {
+    position: absolute;
+    top: -14px;
+    left: 11%;
+    transform: translate(0.3rem);
+    transition: all 0.2s;
+    z-index: 1;
+    color: #F3712D;
+    font-weight: 700;
+    display: none;
+}
+
+.dados-usuario__container--formulario .input-label::before {
+    content: "";
+    height: 10px;
+    background-color: #1A364A;
+    position: absolute;
+    left: 1%;
+    top: 16px;
+    width: 100%;
+    z-index: -1;
+}
+
+.dados-usuario__container--formulario input:focus+ .input-label {
+    top: -20px;
+    left: 5%;
+    color: #F3712D;
+    font-size: 1.5rem;
+    display: block;
+    letter-spacing: 0.5px;
+    padding: 0 5px;
+}
+
+.dados-usuario__container--formulario input:focus+ .input-label--nome{
+    top: -20px;
+    left: 5%;
+    color: #F3712D;
+    font-size: 1.5rem;
+    display: block;
+    letter-spacing: 0.5px;
+    padding: 0 5px;
+}
+
+.dados-usuario__container--formulario input:focus+ .input-label--email{
+    top: -20px;
+    left: 5%;
+    color: #F3712D;
+    font-size: 1.5rem;
+    display: block;
+    letter-spacing: 0.5px;
+    padding: 0 5px;
+}
+
+.dados-usuario__container--formulario input:focus::placeholder {
+    opacity: 0;
+    animation-delay: 0.2s;
+}
+
 .dados-usuario__container--formulario button {
-    width: 365px;
-    height: 40px;
-    padding-bottom: 25px 0;
+    padding: 10px 0;
+    width: 98.7%;
     margin-top: 40px;
     font-size: 20px;
     font-weight: 700;
@@ -116,41 +215,51 @@ body {
     background-color: #2FAEBF;
     border: 3px solid #2FAEBF;
 
-}
-
-@media (max-width: 768px) {
+}@media (max-width: 680px) {
     .dados-usuario__container--box {
-        margin: 50px 0 0 25%;
-    }
-
-    .dados-usuario__container--imagem {
-        margin-left: 34px;
-    }
-}
-
-@media (max-width: 428px) {
-    main {
-        width: 100%;
-    }
-
-    .dados-usuario__container--box {
-        margin:50px 0 0 10px;
-    }
-
-    .dados-usuario__container--imagem  img {
-        margin: 0;
-    }
-
-    .dados-usuario__container--dados {
-        width: 100%;
-    }
-
-    .dados-usuario__container--formulario input {
-        width: 90%;
+        flex-direction: column;
     }
 
     .dados-usuario__container--formulario button {
-        width: 97%;
-        margin-bottom: 15px;
+        margin-left: 4%;
     }
+}
+
+@media (max-width: 432px) {
+    .dados-usuario__container--box {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .dados-usuario__container--direita .dados-usuario__container--dados h1 {
+        font-size: 1.7rem;
+        margin-top: 20px;
+    }
+
+    .dados-usuario__container--formulario input {
+        font-size: 13px;
+        height: 4.7vh;
+        width: 100%;
+    }
+
+    .dados-usuario__container--formulario button {
+        font-size: 14px;
+        padding: 4.5px;
+        margin-left: 8%;
+        height: 4.7vh;
+        width: 100%;
+    }
+
+    .dados-usuario__container--formulario .input-label::before {
+        height: 10px;
+        top: 7px;
+    }
+    
+
+    .dados-usuario__container--formulario input:focus+ .input-label, .dados-usuario__container--formulario input:focus+ .input-label--nome, .dados-usuario__container--formulario input:focus+ .input-label--email {
+        font-size: 0.9rem;
+        top: -14px;
+    }
+
+
 }
