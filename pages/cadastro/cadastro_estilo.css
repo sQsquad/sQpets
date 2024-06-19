@@ -136,6 +136,7 @@ html, body {
     text-align: center;
     font-size: 2rem;
     margin: 2vh 0;
+    align-items: center;
 }
 
 .cadastro__form--label-check {
@@ -144,7 +145,7 @@ html, body {
     cursor: pointer;
 }
 
-.cadastro__form--checkbox input {
+/*.cadastro__form--checkbox input {
     display: none;
     cursor: pointer;
 }
@@ -163,6 +164,32 @@ html, body {
 
 .cadastro__form--checkbox input:checked + label:before {
     background-image: url('/src/imagens/check-tarefa.png');
+}*/
+   
+.cadastro__form--checkbox input {
+    display: none;
+}
+.cadastro__form--checkbox input + label::before {
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-color: #274B64;
+    border: 1px solid #274B64;
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    
+}
+
+.cadastro__form--checkbox input:checked + label::before {
+    /* content: '$#10003;'; */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='50px' viewBox='0 -960 960 960' width='50px' fill='%2300F0FF'%3E%3Cpath d='M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cadastro__form--link {
+    text-decoration: none;
+    color: var(--destaque-bright);
 }
 
 .cadastro__form--link {
