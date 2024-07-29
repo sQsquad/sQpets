@@ -1,0 +1,11 @@
+.logo {
+  height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 725px) {
+  .logo {
+    height: 100%;
+  }
+}/*# sourceMappingURL=logo.css.map */
