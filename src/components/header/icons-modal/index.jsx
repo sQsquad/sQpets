@@ -12,11 +12,11 @@ export default function Icons() {
 
     const handleClick = (iconName) => {
         setActiveModal(iconName);
-    }
+    };
 
     const closeModal = () => {
         setActiveModal(null);
-    }
+    };
 
     return (
         <div className="icones">
