@@ -8,6 +8,7 @@ import Modal from '../open-modal';
 
 
 export default function Icons() {
+    
     const [activeModal, setActiveModal] = useState(null);
 
     const handleClick = (iconName) => {

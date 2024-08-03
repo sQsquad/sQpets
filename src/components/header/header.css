@@ -1,8 +1,7 @@
 .header {
-  height: 3rem;
-  padding: 0.5rem 0;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: #004a5f;
 }/*# sourceMappingURL=header.css.map */

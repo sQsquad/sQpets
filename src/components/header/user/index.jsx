@@ -3,6 +3,8 @@ import './user.sass'
 
 export default function User () {
     return (
-        <img src={userAvatar} className="user" alt="imagem do usuario"/>
+        <div className='icone_avatar'>
+            <img src={userAvatar} className="user" alt="imagem do usuario"/>
+        </div>
     )
 }
