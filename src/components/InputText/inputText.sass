@@ -1,0 +1,37 @@
+@use '../../Styles/globalVariable'
+
+/*---- Inicio estilizaçào do input_text ----*/
+.input_container
+    display: flex
+    flex-direction: column
+    position: relative
+    
+.input_text
+    border: 3px solid globalVariable.$dark-blue
+    width: 581px
+    height: 85px
+    border-radius: 10px
+    font-family: globalVariable.$font-family-main
+    font-size: 36px
+    font-weight: 700
+    color: globalVariable.$dark-blue
+
+
+.text_label
+    position: absolute
+    top: 20px
+    left: 5px
+    font-family: globalVariable.$font-family-main
+    font-size: 36px
+    font-weight: 700
+    color: globalVariable.$dark-blue
+    transition: 0.3s
+    cursor: text
+
+.input_text:focus + .text_label,
+.input_text:not(:placeholder-shown) + .text_label
+    top: -34px
+    left: 15px
+    color: globalVariable.$dark-blue
+    background-color: #ffffff
+/*---- Fim estilizaçào do input_text ----*/
