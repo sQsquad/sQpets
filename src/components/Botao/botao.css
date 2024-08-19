@@ -1,0 +1,19 @@
+.botao_padrao {
+    width: 100%;
+    height: 74px;
+    border: 2px solid #2FAEBF;
+    outline: none;
+    border-radius: 10px;
+    background-color: #2FAEBF;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+
+.botao_padrao:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
