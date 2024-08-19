@@ -1,4 +1,4 @@
-import userAvatar from '../../../../public/imagens-svg/user.svg'
+import userAvatar from '/imagens-svg/user.svg'
 import './user.sass'
 
 export default function User () {
