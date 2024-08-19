@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './icons-modal.sass';
-import task from '../../../../public/imagens-svg/task.svg';
-import sequence from '../../../../public/imagens-svg/sequencia.svg';
-import pet from '../../../../public/imagens-svg/pet.svg';
-import energy from '../../../../public/imagens-svg/energy.svg';
+import task from '/imagens-svg/task.svg';
+import sequence from '/imagens-svg/sequencia.svg';
+import pet from '/imagens-svg/pet.svg';
+import energy from '/imagens-svg/energy.svg';
 import Modal from '../open-modal';
 
 
