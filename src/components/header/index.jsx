@@ -1,18 +1,13 @@
+import DesktopHeader from './desktop-header'
 import './header.css'
-import Icons from './icons-modal'
-import Logo from './logo'
-import User from './user'
-
+import MobileHeader from './mobile-header'
 
 export default function Header () {
 
     return (
         <>
-            <header className="header">
-                <Logo/>
-                <Icons/>
-                <User/>
-            </header>
+            <DesktopHeader/>
+            <MobileHeader/>
         </>
     )
 }
