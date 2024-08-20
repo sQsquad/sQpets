@@ -1,11 +1,18 @@
-import { useState } from 'react'
-import Header from './components/header'
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Cadastro from "./pages/Cadastro";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
-function App() {
-
+export default function App() {
   return (
-    <Header/>
+
+    <Routes>
+      <Route path='/' element={<HomePage />}/> 
+      <Route path='cadastro' element={<Cadastro />}/>
+      <Route path='login' element={<Login />}/>
+      <Route path='dashboard' element={<Dashboard />}/>
+    </Routes>
+
   )
 }
-
-export default App
