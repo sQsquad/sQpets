@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import './icons-modal.css';
 import task from '/imagens-svg/task.svg';
 import sequence from '/imagens-svg/sequencia.svg';
 import pet from '/imagens-svg/pet.svg';
 import energy from '/imagens-svg/energy.svg';
-import Modal from '../open-modal';
+import Modal from '../../header-modal-function';
+import './icons.css'
 
 
 export default function Icons() {
