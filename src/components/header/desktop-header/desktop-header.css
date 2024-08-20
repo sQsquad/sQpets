@@ -1,0 +1,17 @@
+.desktop_header {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .desktop_header {
+        position: relative;
+        width: 100vw;
+        height: 4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #004a5f;
+        padding: 0 1rem;
+    }
+}

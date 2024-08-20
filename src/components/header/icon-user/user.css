@@ -1,7 +1,7 @@
-.logo {
-    height: 4rem;
-    width: 13rem;
+.user {
+    width: 5rem;
+    height: 4.5rem;
     padding: 0.5rem;
     -o-object-fit: contain;
        object-fit: contain;
-}
+  }
