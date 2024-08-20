@@ -1,5 +1,5 @@
 import userAvatar from '/imagens-svg/user.svg'
-import './user.sass'
+import './user.css'
 
 export default function User () {
     return (

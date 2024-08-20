@@ -1,5 +1,5 @@
 import React from 'react';
-import './modal.sass';
+import './modal.css';
 
 export default function Modal({ iconName, closeModal }) {
     const getContent = () => {
