@@ -1,0 +1,24 @@
+.icones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0.5vw;
+
+    img {
+        height: 45%;
+        cursor: pointer;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .icones {
+        justify-content: end;
+
+        img {
+            width: 3rem;
+            height: 40%;
+        }
+    }
+}
