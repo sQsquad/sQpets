@@ -1,5 +1,5 @@
 import sQpetsLogo from '/imagens-svg/sQpets.svg'
-import './logo.sass'
+import './logo.css'
 
 export default function Logo() {
     return (

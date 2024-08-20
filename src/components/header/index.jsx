@@ -1,4 +1,4 @@
-import './header.sass'
+import './header.css'
 import Icons from './icons-modal'
 import Logo from './logo'
 import User from './user'
