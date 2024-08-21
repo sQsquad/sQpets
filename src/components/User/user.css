@@ -1,0 +1,15 @@
+.user_container {
+    width: 4.7rem;
+    height: 4.7rem;
+    padding: 0.5rem;
+}
+
+.user_circle_animated {
+    border: 3px solid red;
+    border-radius: 50%;
+}
+
+.user_photo {
+    -o-object-fit: contain;
+    object-fit: contain;
+}
