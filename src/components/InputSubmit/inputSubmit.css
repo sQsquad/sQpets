@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap");
+/*---- Fontes ----*/
+/*---- Cores comuns ----*/
+/*---- Cores Light Theme----*/
+/*---- Cores dark Theme----*/
+.input_submit {
+  border: 3px solid #2FAEBF;
+  width: 100%;
+  max-width: 581px;
+  height: 74px;
+  border-radius: 10px;
+  font-family: "Zen Maru Gothic", serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #2FAEBF;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #2FAEBF;
+  color: white;
+}
+.input_submit:hover {
+  background-color: #BEF7FF;
+  color: #2FAEBF;
+}
+.input_submit:active {
+  background-color: #2FAEBF;
+  color: white;
+}/*# sourceMappingURL=inputSubmit.css.map */

@@ -1,0 +1,22 @@
+@use '../../Styles/globalVariable'
+
+.input_submit
+    border: 3px solid globalVariable.$dark-blue
+    width: 100%
+    max-width: 581px
+    height: 74px
+    border-radius: 10px
+    font-family: globalVariable.$font-family-main
+    font-size: 48px
+    font-weight: 700
+    color: globalVariable.$dark-blue
+    cursor: pointer
+    transition: 0.3s
+    background-color: globalVariable.$dark-blue
+    color: white
+    &:hover
+        background-color: globalVariable.$light-blue
+        color: globalVariable.$dark-blue
+    &:active
+        background-color: globalVariable.$dark-blue
+        color: white

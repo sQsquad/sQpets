@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap");
+/*---- Fontes ----*/
+/*---- Cores comuns ----*/
+/*---- Cores Light Theme----*/
+/*---- Cores dark Theme----*/
+/*---- Inicio estilizaçào do input_checkbox ----*/
+.checkbox_container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  border: green 1px solid;
+}
+
+.input_checkbox {
+  display: flex;
+  gap: 50px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 700;
+  color: #2FAEBF;
+  background: #0B3553;
+}
+
+/*---- Fim estilizaçào do input_checkbox ----*//*# sourceMappingURL=inputCheckbox.css.map */
