@@ -1,3 +1,22 @@
 body {
     background-color:  #010101;
 }
+
+section {
+    display: flex;
+    /* border: 3px solid white; */
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 2em 0;
+}
+
+.Container {
+    width: 60%;
+    border: 3px solid red;
+}
+
+.Container--img {
+    border: 3px solid yellow;
+    width: 40%;
+    height: 65%;
+}
