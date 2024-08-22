@@ -6,4 +6,4 @@ Funcionalidades características de games: <br>
 - Acumulação de pontos de experiência <br>
 - Progressão de personagens <br>
 
-
+-teste
