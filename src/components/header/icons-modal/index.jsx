@@ -26,6 +26,7 @@ export default function Icons() {
             <img src={pet} alt="icone do pet" onClick={() => handleClick('pet')}/>
             <img src={energy} alt="icone de energia" onClick={() => handleClick('energy')}/>
 
+
             {activeModal && (
                 <Modal iconName={activeModal} closeModal={closeModal} />
             )}
