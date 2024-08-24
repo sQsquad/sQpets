@@ -1,0 +1,16 @@
+.titulo_padrao {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--fonte);
+    font-size: 4rem;
+    padding: 2%;
+}
+.light_mode {
+    color: var(--texto-escuro);
+}
+
+.dark_mode {
+    color: var(--light-blue);
+}
