@@ -17,6 +17,7 @@ section {
 
 .Container--img {
     border: 3px solid yellow;
-    width: 40%;
+    width: 30%;
     height: 65%;
+    margin-left: 12em;
 }
