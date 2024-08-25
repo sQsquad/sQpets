@@ -7,12 +7,10 @@ export default function User() {
     const [activeModal, setActiveModal] = useState(null);
 
     const handleClick = (iconName) => {
-        console.log("Imagem clicada, deve abrir modal: ", iconName);  // Verifique se aparece no console
         setActiveModal(iconName);
     }
 
     const closeModal = () => {
-        console.log("Fechando modal");  // Verifique se aparece no console
         setActiveModal(null);
     }
 
