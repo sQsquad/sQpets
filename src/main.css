@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
 :root {
   --bg-color-ligh: #FBFEF7;
   --dark-blue: #2FAEBF;
@@ -12,10 +14,12 @@
   --azul-saturado: #0087E8;
   --roxo-destaque: #8C54E6;
   --fundo-modal-dias: #081B29;
+  --fonte: "Zen Maru Gothic", serif;
 }
 
 * {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  font-family: var(--fonte);
 }
