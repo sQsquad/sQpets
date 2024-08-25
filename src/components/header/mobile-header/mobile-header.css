@@ -4,7 +4,7 @@
     align-items: center;
     height: 4rem;
     justify-content: space-between;
-    background-color: #004a5f;
+    background-color: var(--dark-blue);
     padding: 0.5rem;
   }
   
@@ -12,7 +12,7 @@
     position: absolute;
     bottom: 0;
     height: 3.5rem;
-    background-color: #004a5f;
+    background-color: var(--dark-blue);
   }
 
   
