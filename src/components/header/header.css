@@ -1,9 +1,5 @@
-:root {
-  --cor-principal: #004A5F;
-}
-
 .header {
   width: 100vw;
   height: 4rem;
-  background-color: var(--cor-principal);
+  background-color: var(--dark-blue);
 }
