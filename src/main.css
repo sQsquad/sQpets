@@ -23,3 +23,11 @@
   box-sizing: border-box;
   font-family: var(--fonte);
 }
+.dark_mode {
+  background-color: var(--bg-color-dark);
+}
+
+.light_mode {
+  background-color: var(--bg-color-light);
+}
+
