@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
 
-:root {
-  --bg-color-ligh: #FBFEF7;
+:root{
+  --bg-color-light: #FBFEF7;
   --dark-blue: #2FAEBF;
   --light-blue: #BEF7FF;
   --bg-color-dark: #1A364A;
@@ -30,4 +30,3 @@
 .light_mode {
   background-color: var(--bg-color-light);
 }
-
