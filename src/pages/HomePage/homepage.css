@@ -1,5 +1,5 @@
 body {
-    background-color:  #010101;
+    background-color:  var(--bg-color-light);
 }
 
 section {

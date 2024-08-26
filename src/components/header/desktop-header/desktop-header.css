@@ -11,7 +11,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background-color: #004a5f;
+        background-color: var(--light-blue-bg);
         padding: 0 1rem;
     }
 }
