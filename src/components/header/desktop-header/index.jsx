@@ -1,7 +1,7 @@
 import './desktop-header.css'
 import Logo from '../logo'
-import User from '../icon-user'
 import Icons from '../icons-modal'
+import User from '../../User'
 
 
 export default function DesktopHeader () {

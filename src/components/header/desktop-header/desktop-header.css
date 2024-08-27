@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 725px) {
     .desktop_header {
         position: relative;
         width: 100vw;
@@ -11,7 +11,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        background-color: var(--light-blue-bg);
+        background-color: var(--dark-blue);
         padding: 0 1rem;
     }
 }

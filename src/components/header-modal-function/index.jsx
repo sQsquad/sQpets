@@ -12,8 +12,6 @@ export default function Modal({ iconName, closeModal }) {
                 return <p>Conteúdo do modal do pet</p>;
             case 'energy':
                 return <p>Conteúdo do modal de energia</p>;
-            case 'user':
-                return <p>Modal do usuario</p>
         }
     };
 
