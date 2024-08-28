@@ -1,4 +1,4 @@
-.card-container {
+.card_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.card-content {
+.card_content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@
     color: var(--light-blue);
 }
 
-.content-tasks {
+.content_tasks {
     height: 80%;
     width: 100%;
     display: flex;
@@ -48,7 +48,7 @@
     color: var(--destaque);
 }
 
-.card-button {
+.card_button {
     padding: 0 2.5rem;
     height: 10%;
 }

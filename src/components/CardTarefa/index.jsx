@@ -4,15 +4,16 @@ import './cardTarefa.css';
 
 export default function CardTarefa() {
     return (
-        <div className="card-container">
-            <div className="card-content">
+        <div className="card_container">
+            <div className="card_content">
                 <h1 className="titulo">Tarefas de hoje</h1>
-                <div className="content-tasks">                    
+                <div className="content_tasks">
+
                 </div>
                 <div className="historico">
                     <ToLink>historico de tarefas</ToLink>
                 </div>
-                <div className="card-button">
+                <div className="card_button">
                     <Botao children={'Iniciar Tarefa'}/>
                 </div>
             </div>
