@@ -29,5 +29,11 @@
     width: 20vw;
     cursor: pointer;
     font-size: 1.5rem;
-    color: white
+}
+
+@media (min-width: 725px) {
+    .user_container {
+        width: 4.7rem;
+        height: 4.7rem;
+    }
 }
