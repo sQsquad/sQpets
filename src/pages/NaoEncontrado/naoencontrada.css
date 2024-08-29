@@ -1,3 +1,5 @@
-.naoEncontrado_principal{
-    height: 80vh;
+.section_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
