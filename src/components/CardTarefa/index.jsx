@@ -1,4 +1,5 @@
 import Botao from "../Botao";
+import Tarefa from "../Tarefa";
 import ToLink from "../ToLink";
 import './cardTarefa.css';
 
@@ -8,7 +9,7 @@ export default function CardTarefa() {
             <div className="card_content">
                 <h1 className="titulo">Tarefas de hoje</h1>
                 <div className="content_tasks">
-                    {/* TAREFAS */}
+                    <Tarefa />
                 </div>
                 <div className="historico">
                     <ToLink>historico de tarefas</ToLink>
