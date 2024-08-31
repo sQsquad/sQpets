@@ -1,5 +1,6 @@
 .tarefa_container {
     display: flex;
+    justify-content: space-evenly;
     width: 90%;
     height: 80px;
     font-family: var(--fonte);
@@ -12,6 +13,7 @@
     font-size: 2.25rem;
     font-weight: bold;
     color: var(--light-blue);
+    justify-content: center;
 }
 
 .tarefa_categoria {
