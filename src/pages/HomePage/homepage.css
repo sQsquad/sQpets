@@ -4,22 +4,21 @@ body {
 
 section {
     display: flex;
-    /* border: 3px solid white; */
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 2em 2em 0;
     height: auto;
 }
 
 .Container {
-    width: 60%;
+    width: 60vw;
     border: 3px solid red;
     height: 80vh;
 }
 
 .Container--img {
     border: 3px solid yellow;
-    width: 30%;
-    height: 65%;
+    width: 30vw;
+    height: 65vh;
     margin-left: 12em;
 }
