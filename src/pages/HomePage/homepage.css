@@ -8,11 +8,13 @@ section {
     width: 90%;
     margin: 0 auto;
     padding: 2em 2em 0;
+    height: auto;
 }
 
 .Container {
     width: 60%;
     border: 3px solid red;
+    height: 80vh;
 }
 
 .Container--img {
