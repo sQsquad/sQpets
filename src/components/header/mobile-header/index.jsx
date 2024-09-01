@@ -1,6 +1,6 @@
 import './mobile-header.css'
 import Logo from '../logo'
-import User from '../icon-user'
+import User from '../../User'
 import Icons from '../icons-modal'
 
 

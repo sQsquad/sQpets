@@ -1,5 +1,5 @@
 body {
-    background-color:  #010101;
+    background-color:  var(--bg-color-light);
 }
 
 section {
@@ -17,8 +17,8 @@ section {
 }
 
 .Container--img {
-    /* border: 3px solid yellow; */
-    width: 30vw;
-    height: 65vh;
+    border: 3px solid yellow;
+    width: 30%;
+    height: 65%;
     margin-left: 12em;
 }
