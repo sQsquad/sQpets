@@ -1,7 +1,7 @@
 import Header from "../../components/header"
 import './homepage.css'
 import AsideImagem from '../../components/Aside-Imagem';
-import CriarTarefa from "../../components/botao-criar-tarefa";
+import Botao from '../../components/Botao';
 
 
 export default function HomePage() {
@@ -17,7 +17,7 @@ export default function HomePage() {
                 </div>
                 <div className="Container--img">
                     <AsideImagem />
-                    <CriarTarefa />
+                    <Botao>Criar Tarefa</Botao>
                 </div>
             </section>
             
