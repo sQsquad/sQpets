@@ -17,8 +17,16 @@
 }
 
 @media (min-width: 725px) {
+  .modal-overlay {
+    top: 5rem;
+    right: 0;
+    justify-content: center;
+
+    /* background: rgba(0, 0, 0, 0.4); */
+  }
+
   .modal-overlay .modal-content{
-    width: 300px;
-    height: 250px;
+    width: 400px;
+    height: 280px;
   }
 }

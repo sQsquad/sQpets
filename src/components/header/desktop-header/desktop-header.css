@@ -10,7 +10,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0 1rem;
+        padding: 0 2rem;
+        margin-top: 2vh;
     }
 
     .desktop_header_divEnd {
