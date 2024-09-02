@@ -4,17 +4,16 @@ body {
 
 section {
     display: flex;
-    /* border: 3px solid white; */
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 2em 2em 0;
-
-    height: 85%; /* qubrando altura - corrigir */
+    height: auto;
 }
 
 .Container {
-    width: 60%;
-    border: 3px solid red;
+    width: 60vw;
+    /* border: 3px solid red; */
+    height: 80vh;
 }
 
 .Container--img {
