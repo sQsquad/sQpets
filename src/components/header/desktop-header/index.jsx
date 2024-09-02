@@ -10,8 +10,11 @@ export default function DesktopHeader () {
 
         <header className='desktop_header'>
             <Logo/>
-            <Icons/>
-            <User/>
+
+            <div className='desktop_header_divEnd'>
+                <Icons/>
+                <User/>
+            </div>
         </header>
              
     )

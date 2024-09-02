@@ -23,9 +23,17 @@ export default function User() {
                     {activeModal && (
                         <>
                             <div className='modal_user'>
-                                <p>O modal foi aberto com sucesso!</p>
+
+                                <ul className='modal_user_lista'>
+                                    <span>Perfil</span>
+                                    <span>Histórco</span>
+                                    <span>Tema</span>
+                                    <span>Sobre</span>
+                                    <span>Sair</span>
+                                </ul>
                             </div>
-                            <span className='close' onClick={closeModal}>Fechar Modal </span>
+
+                            <span className='close' onClick={closeModal}></span>
                         </>
                     )}
                 </div>

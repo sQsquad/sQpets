@@ -10,8 +10,14 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        background-color: var(--dark-blue);
-        padding: 0 1rem;
+        padding: 0 2rem;
+        margin-top: 2vh;
+    }
+
+    .desktop_header_divEnd {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
     }
 }
