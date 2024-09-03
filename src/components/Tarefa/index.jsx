@@ -1,13 +1,13 @@
+import InputCheckbox from "../InputCheckBox";
 import "./tarefa.css";
-export default function Tarefa() {
+export default function Tarefa({name, textLabel, tag, tempo, cor}) {
     return (
-        <div className="tarefa_container">
+        <div className="tarefa_container" >
             <div className="checkbox_container"> 
-                <input type="checkbox" className="tarefa_input" name="tarefa"/>
-                <label htmlFor="tarefa">Curso JS</label>
+                <InputCheckbox type={"checkbox"} id={name} htmlFor={name} textLabel={textLabel}/>
             </div>
-            <p className="tarefa_categoria">Programação</p>
-            <p className="checkbox_container">01:00</p>
+            <p className="tarefa_categoria">{tag}</p>
+            <p className="checkbox_container">{tempo}</p>
         </div>
     )
 }

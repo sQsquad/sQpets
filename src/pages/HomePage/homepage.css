@@ -12,11 +12,9 @@ section {
 
 .Container {
     width: 60%;
-    border: 3px solid red;
 }
 
 .Container--img {
-    border: 3px solid yellow;
     width: 30%;
     height: 65%;
     margin-left: 12em;
