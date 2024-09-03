@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const TarefaContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     width: 90%;
     height: 80px;
     font-family: var(--fonte);
@@ -16,17 +17,13 @@ const CheckboxContainer = styled.div`
     font-weight: bold;
     color: var(--light-blue);
     display: flex;
-    text-align: center;
     justify-content: center;
-    border: none;
 `
 const TarefaCategoria = styled.p`
 color: ${(props) => props.$cor};
     font-size: 2rem;
     font-weight: bold;
     display: flex;
-    text-align: center;
-    align-items: center;
     justify-content: flex-end;
     border: none;
 `
