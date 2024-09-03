@@ -12,6 +12,7 @@ export default function CardTarefa() {
                     <Tarefa textLabel={"Curso JS"} name={"tarefa_1"} tag={"programação"} tempo={"01:00"} cor={"var(--dark-blue)"}/>
                     <Tarefa textLabel={"Caminhada"} name={"tarefa_2"} tag={"exercício"} tempo={"00:30"} cor={"var(--destaque)"}/>
                     <Tarefa textLabel={"Leitura"} name={"tarefa_3"} tag={"leitura"} tempo={"00:20"} cor={"var(--roxo-destaque)"}/>
+                    <Tarefa textLabel={"Limpeza"} name={"tarefa_4"} tag={"casa"} tempo={"00:20"} cor={"var(--texto-claro)"}/>
                 </div>
                 <div className="historico">
                     <ToLink>historico de tarefas</ToLink>

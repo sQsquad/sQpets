@@ -3,12 +3,12 @@ import styled from 'styled-components';
 const BotaoPadrao = styled.button`
     width: 100%;
     max-width: 580px;
-    height: 74px;
+    height: 3rem;
     border: 2px solid var(--dark-blue);
     outline: none;
     border-radius: 10px;
     background-color: var(--dark-blue);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--texto-claro);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);

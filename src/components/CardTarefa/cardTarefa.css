@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 54rem;
-    height: 47rem;
+    width: 100%;
+    height: 80%;
     border: 4px solid #87C7CF;
     border-radius: 10px;
     background-color: var(--fundo-modal);
@@ -26,7 +26,7 @@
     height: 5rem;
     font-family: var(--fonte);
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: var(--light-blue);
 }
 
@@ -40,7 +40,6 @@
 }
 
 .historico {
-    font-size: 2rem;
     text-align: right;
     height: 46px;
     font-family: var(--fonte);
