@@ -9,7 +9,6 @@
   display: flex;
   position: relative;
   align-items: center;
-  border: green 1px solid;
 }
 
 .input_checkbox {

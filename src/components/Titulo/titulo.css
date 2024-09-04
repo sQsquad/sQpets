@@ -5,7 +5,6 @@
     justify-content: center;
     font-family: var(--fonte);
     font-size: 4rem;
-    padding: 2%;
 }
 .light_mode {
     color: var(--texto-escuro);

@@ -1,5 +1,6 @@
 body {
     background-color:  var(--bg-color-dark);
+    background-color:  var(--bg-color-dark);
 }
 
 section {
@@ -17,7 +18,6 @@ section {
 }
 
 .Container--img {
-    border: 3px solid yellow;
     width: 30%;
     height: 65%;
     margin-left: 12em;
