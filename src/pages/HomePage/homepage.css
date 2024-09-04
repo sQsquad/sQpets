@@ -1,17 +1,20 @@
 body {
     background-color:  var(--bg-color-dark);
+    background-color:  var(--bg-color-dark);
 }
 
 section {
     display: flex;
-    /* border: 3px solid white; */
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 2em 2em 0;
+    height: auto;
 }
 
 .Container {
-    width: 60%;
+    width: 60vw;
+    /* border: 3px solid red; */
+    height: 80vh;
 }
 
 .Container--img {

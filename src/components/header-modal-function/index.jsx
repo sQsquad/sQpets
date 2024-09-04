@@ -18,7 +18,6 @@ export default function Modal({ iconName, closeModal }) {
     return (
         <div className="modal-overlay" onClick={closeModal}>
             <div className="modal-content close" onClick={(evento) => evento.stopPropagation()}>
-                <span className="close" onClick={closeModal}>&times;</span>
                 {getContent()}
             </div>
         </div>
