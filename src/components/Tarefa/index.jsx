@@ -24,7 +24,7 @@ const CheckboxContainer = styled.div`
     display: flex;
     justify-content: flex-end;
     @media screen and (min-width: 1024px){
-        font-size: 2rem;
+        font-size: 1.5rem;
         align-items: center;
     }
 `
@@ -33,12 +33,15 @@ color: ${(props) => props.$cor};
     font-size: 1.25rem;
     font-weight: bold;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     border: none;
     @media screen and (min-width: 1024px){
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         align-items: center;
     }
+`
+const ContainerTempo = styled(TarefaCategoria)`
+    width: fit-content;
 `
 
 export default function Tarefa({name, textLabel, tag, tempo, cor}) {
@@ -48,7 +51,7 @@ export default function Tarefa({name, textLabel, tag, tempo, cor}) {
                 <InputCheckbox type={"checkbox"} id={name} htmlFor={name} textLabel={textLabel}/>
             </CheckboxContainer>
             <TarefaCategoria $cor={cor}>{tag}</TarefaCategoria>
-            <CheckboxContainer>{tempo}</CheckboxContainer>
+            <ContainerTempo $cor={cor}>{tempo}</ContainerTempo>
         </TarefaContainer>
     )
 }
