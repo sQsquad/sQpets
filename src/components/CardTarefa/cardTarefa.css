@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80%;
+    height: fit-content;
+    padding: 2rem;
     border: 4px solid #87C7CF;
     border-radius: 10px;
     background-color: var(--fundo-modal);
