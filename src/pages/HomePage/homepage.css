@@ -7,12 +7,13 @@ section {
     display: flex;
     width: 100%;
     margin: 0 auto;
-    padding: 2em 2em 0;
+    padding: 4em 0;
     height: auto;
+    justify-content: space-around;
 }
 
 .Container {
-    width: 60vw;
+    width: 40vw;
     /* border: 3px solid red; */
     height: 80vh;
 }
