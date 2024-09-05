@@ -1,25 +1,20 @@
 body {
     background-color:  var(--bg-color-dark);
-    background-color:  var(--bg-color-dark);
 }
+
+/* section ocupando mais q 100% da altura (???) */
+/* card tarefas não acompanha altura no desktop */
 
 section {
+    border: 2px solid red;
+
     display: flex;
+    flex-direction: column;
     width: 100%;
-    margin: 0 auto;
-    padding: 4em 0;
-    height: auto;
-    justify-content: space-around;
 }
 
-.Container {
-    width: 40vw;
-    /* border: 3px solid red; */
-    height: 80vh;
-}
-
-.Container--img {
-    width: 30%;
-    height: 65%;
-    margin-left: 12em;
+@media (min-width: 725px) {
+    section {
+        flex-direction: row;
+    }
 }
