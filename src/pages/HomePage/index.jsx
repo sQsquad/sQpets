@@ -1,9 +1,7 @@
 import Header from "../../components/header"
 import './homepage.css'
-import AsideImagem from '../../components/Aside-Imagem';
-import Botao from '../../components/Botao';
-
 import CardTarefa from "../../components/CardTarefa";
+import Pet from "../../components/Pet"
 
 export default function HomePage() {
 
@@ -11,21 +9,12 @@ export default function HomePage() {
 
     return (
         <>
-            <Header />
+            <Header/>
             <section>
-                <div className="Container">
-                    <CardTarefa />
-                </div>
-                <div className="Container--img">
-                    <AsideImagem />
-                    <Botao>Criar Tarefa</Botao>
-                </div>
+                <CardTarefa />
+                <Pet/>
             </section>
-            
-
         </>
-        
-
     )
     
 }
