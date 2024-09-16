@@ -4,14 +4,17 @@ import Pet from "../../components/Pet";
 import styled from "styled-components";
 
 const Section = styled.section`
-    padding: 1rem;
+    padding: 4rem;
     display: flex;
     flex-direction: row;
-    width: 100%;
     align-items: center;
+    width: 100%;
+    height: 90%;
     @media screen and (max-width: 1024px){
         flex-direction: column-reverse;
         justify-content: flex-end;
+        height: auto;
+        padding: 1.5rem;
     }
 `
 

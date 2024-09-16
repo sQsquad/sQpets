@@ -2,10 +2,7 @@ import styled from "styled-components";
 import { useTheme } from "../../contexto/ThemeContext";
 import { BsMoon, BsSun } from "react-icons/bs";
 
-export default function BotaoTema() {
-    const { isLightMode, toggleTheme } = useTheme();
-
-    const Tema = styled.button`
+const Tema = styled.button`
         background-color: transparent;
         cursor: pointer;
         width: 3rem;
@@ -24,9 +21,14 @@ export default function BotaoTema() {
         }
     `
 
+export default function BotaoTema() {
+    const { isLightMode, toggleTheme } = useTheme();
+
     return (
+        <>
         <Tema onClick={toggleTheme}>
             {isLightMode ? <BsMoon /> : <BsSun />}
         </Tema>
+        </>
     )
 }
