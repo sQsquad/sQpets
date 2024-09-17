@@ -16,6 +16,10 @@ const Section = styled.section`
         height: auto;
         padding: 1.5rem;
     }
+    @media screen and (max-width: 768px) {
+        padding: 1rem;
+        justify-content: center;
+    }
 `
 
 export default function HomePage() {

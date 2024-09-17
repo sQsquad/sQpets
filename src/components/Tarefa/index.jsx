@@ -11,11 +11,11 @@ const TarefaContainer = styled.div`
     border-radius: 0.625rem;
     padding: 0 1.25rem 0 1.25rem;
     align-items: center;
-    @media screen and (min-width: 820px){
+    @media screen and (max-width: 1024px) {
         height: 70px;
     }
-    @media screen and (min-width: 1024px){
-        height: 70px;
+    @media screen and (max-width: 768px) {
+        height: 60px;
     }
 `
 const CheckboxContainer = styled.div`
@@ -24,9 +24,12 @@ const CheckboxContainer = styled.div`
     color: ${props => props.theme['--details']};
     display: flex;
     justify-content: flex-end;
-    @media screen and (min-width: 1024px){
+    @media screen and (max-width: 1024px){
         font-size: 1.5rem;
         align-items: center;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
     }
 `
 const TarefaCategoria = styled.p`
@@ -37,8 +40,11 @@ color: ${(props) => props.theme[props.$cor]};
     justify-content: flex-start;
     border: none;
     align-items: center;
-    @media screen and (min-width: 1024px){
+    @media screen and (max-width: 1024px){
         font-size: 1.5rem;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
     }
 `
 const ContainerTempo = styled(TarefaCategoria)`

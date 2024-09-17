@@ -17,6 +17,9 @@ const CardContainer = styled.div`
     background-color: ${props => props.theme['--fundo-modal']};
     box-sizing: border-box;
     text-align: center;
+    @media screen and (max-width: 768px) {
+        padding: 1rem;
+    }
 `
 const CardContent = styled.div`
     display: flex;
@@ -25,6 +28,12 @@ const CardContent = styled.div`
     width: 80%;
     height: 90%;
     gap: 1.25rem;
+    @media screen and (max-width: 1024px) {
+        width: 90%;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 const TituloCard = styled.h1`
     width: 29rem;
@@ -33,6 +42,11 @@ const TituloCard = styled.h1`
     font-weight: 700;
     font-size: 2.5rem;
     color: ${props => props.theme['--details']};
+    @media screen and (max-width: 768px) {
+        height: 3rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
 `
 const ContentTasks = styled.div`
     height: 80%;
@@ -49,12 +63,18 @@ const Historico = styled.div`
     font-weight: 700;
     text-decoration: none;
     color: ${props => props.theme['--destaque']};
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 `
 const CardButton = styled.div`
     padding: 0 2.5rem;
     height: 10%;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
 `
 
 export default function CardTarefa() {
