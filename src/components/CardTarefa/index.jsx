@@ -27,7 +27,6 @@ const CardContent = styled.div`
     align-items: center;
     width: 80%;
     height: 90%;
-    gap: 1.25rem;
     @media screen and (max-width: 1024px) {
         width: 90%;
     }
