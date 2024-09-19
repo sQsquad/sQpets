@@ -19,6 +19,7 @@ const CardContainer = styled.div`
     text-align: center;
     @media screen and (max-width: 768px) {
         padding: 1rem;
+        margin-bottom: 3rem;
     }
 `
 const CardContent = styled.div`

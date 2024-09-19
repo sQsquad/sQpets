@@ -34,6 +34,8 @@ const GlobalStyle = createGlobalStyle`
         border: 0;
         vertical-align: baseline;
         text-decoration: none;
+        font-size: 100%;
+        font: inherit;
     }
 
     ol, ul {
