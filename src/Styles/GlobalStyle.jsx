@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     :root{
         --azul-saturado: #0087E8;
         --roxo-destaque: #8C54E6;
@@ -61,3 +61,5 @@ export default createGlobalStyle`
         font-weight: 600;
     }
 `
+
+export default GlobalStyle;

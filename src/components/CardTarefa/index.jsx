@@ -35,7 +35,7 @@ const CardContent = styled.div`
     }
 `
 const TituloCard = styled.h1`
-    width: 29rem;
+    width: fit-content;
     height: 5rem;
     font-family: var(--fonte);
     font-weight: 700;
@@ -60,7 +60,6 @@ const Historico = styled.div`
     height: 46px;
     font-family: var(--fonte);
     font-weight: 700;
-    text-decoration: none;
     color: ${props => props.theme['--destaque']};
     @media screen and (max-width: 768px) {
         font-size: 1.5rem;
