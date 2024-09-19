@@ -1,12 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle `
+export default createGlobalStyle`
     :root{
         --azul-saturado: #0087E8;
         --roxo-destaque: #8C54E6;
         --tag-clara: #ffffff;
         --fonte: "Zen Maru Gothic", serif;
     }
+
     * {
         width: 100%;
         height: 100%;
@@ -14,6 +15,7 @@ const GlobalStyle = createGlobalStyle `
         font-family: var(--fonte);
         transition: 0.1s;
     }
+
     html, body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
@@ -30,31 +32,32 @@ const GlobalStyle = createGlobalStyle `
         margin: 0;
         padding: 0;
         border: 0;
-        font-size: 100%;
-        font: inherit;
         vertical-align: baseline;
         text-decoration: none;
     }
-        ol, ul {
-	list-style: none;
-}
+
+    ol, ul {
+	    list-style: none;
+    }
+
     blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+	    quotes: none;
+    }
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+	    content: '';
+	    content: none;
+    }
+
+    table {
+	    border-collapse: collapse;
+	    border-spacing: 0;
+    }
+
     body {
-    background: ${({ theme }) => theme['--bg-color']};
-    font-family: var(--fonte);
-    font-weight: 600;
+        background: ${({ theme }) => theme['--bg-color']};
+        font-family: var(--fonte);
+        font-weight: 600;
     }
 `
-
-export default GlobalStyle;
