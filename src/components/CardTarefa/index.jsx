@@ -11,7 +11,7 @@ const CardContainer = styled.div`
     justify-content: center;
     width: 100%;    
     height: auto;
-    padding: 2rem 0 2rem 0;
+    padding: 1.25rem 0 2rem 0;
     border: 4px solid #87C7CF;
     border-radius: 10px;
     background-color: ${props => props.theme['--fundo-modal']};
@@ -41,6 +41,7 @@ const TituloCard = styled.h1`
     font-family: var(--fonte);
     font-weight: 700;
     font-size: 2.5rem;
+    margin-bottom: 2vh;
     color: ${props => props.theme['--details']};
     @media screen and (max-width: 768px) {
         height: 3rem;
