@@ -18,23 +18,24 @@ export default function ModalForm({ onSubmit, onclose }) {
 
     return(
         <>
-            <div className='modal-overlay'>
-                <div className='form_container'>
+            <div className='modal__overlay'>
+                <div className='form__container'>
                     <form onSubmit={controlarSubmissao} className='form'>
-                        <div className='container_tarefa'>
+                        <div className='container__tarefa'>
                             <label>Nome da tarefa</label>
                             <input value={nome} onChange={(e) => setNome(e.target.value)} type="text" />
                         </div>
-                        <div className='container_tarefa'>
+                        <div className='container__tarefa'>
                             <label>categoria</label>
                             <input type="text" value={idCategoria} onChange={(e) => setIdCategoria(e.target.value)} />
                         </div>
-                        <div className='container_tarefa'>
+                        <div className='container__tarefa'>
                             <label>Tempo (minutos)</label>
                             <input type="number" value={tempo} onChange={(e) => setTempo(e.target.value)} />
                         </div>
 
-                        <button type='submit'>Criar tarefa</button>
+                        <Botao type='submit' >Criar tarefa</Botao>
+                        {/* <button type='submit'>Criar tarefa</button> */}
 
                     </form>
                 </div>
