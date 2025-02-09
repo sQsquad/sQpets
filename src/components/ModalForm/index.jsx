@@ -27,7 +27,7 @@ export default function ModalForm({ onSubmit, onclose }) {
                             <input className='tarefa__input' value={nome} onChange={(e) => setNome(e.target.value)} type="text" />
                         </div>
                         <div className='container__tarefa'>
-                            <label>categoria</label>
+                            <label>Categoria</label>
                             <input className='tarefa__input' type="text" value={idCategoria} onChange={(e) => setIdCategoria(e.target.value)} />
                         </div>
                         <div className='container__tarefa'>
