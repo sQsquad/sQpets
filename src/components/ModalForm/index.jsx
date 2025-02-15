@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Botao from '../Botao';
 import './modalform.css';
 import InputSubmit from '../InputSubmit';
+import { IoCloseCircle } from "react-icons/io5";
 
 export default function ModalForm({ onSubmit, onclose }) {
 
@@ -21,6 +22,7 @@ export default function ModalForm({ onSubmit, onclose }) {
         <>
             <div className='modal__overlay'>
                 <div className='form__container'>
+                    <IoCloseCircle className='close__icon' onClick={onclose} />
                     <form onSubmit={controlarSubmissao} className='form'>
                         <div className='container__tarefa'>
                             <label>Nome da tarefa</label>
