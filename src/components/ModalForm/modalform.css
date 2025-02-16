@@ -1,5 +1,5 @@
-.modal-overlay {
-    position: fixed;
+.modal__overlay {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -11,29 +11,74 @@
 
 }
 
-.form_container {
+
+
+.form__container {
     background: #0B3553;
     border-radius: 8px;
     padding: 20px;
-    width: 600px;
-    height: 600px;
+    width: 50%;
+    height: 90%;
     border: 4px solid #87C7CF;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.close__icon {
+    cursor: pointer;
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    align-self: flex-end;
 }
 
 .form {
     max-width: 90%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
 }
 
-.container_tarefa {
+.container__tarefa {
     height: auto;
 }
 
-.form input {
-    height: auto;
-    border-radius: 6px;
-    padding: 16px;
+label {
+    color: white;
+}
+
+.tarefa__input {
+   border-radius: 8px;
+   padding: 5px 10px;
+   border: 3px solid #87C7CF;
+   height: 80%;
+}
+
+@media (max-width: 768px) {
+    .form__container {
+        width: 90%;
+    }
+
+    .form {
+        width: 95%;
+        padding: 0;
+    }
+
+    .tarefa__input {
+        height: 75%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .form__container {
+        width: 80%;
+    }
+
+    .tarefa__input {
+        height: 80%;
+    }
 }

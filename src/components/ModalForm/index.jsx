@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Botao from '../Botao';
 import './modalform.css';
+import InputSubmit from '../InputSubmit';
+import { IoCloseCircle } from "react-icons/io5";
 
 export default function ModalForm({ onSubmit, onclose }) {
 
@@ -18,23 +20,25 @@ export default function ModalForm({ onSubmit, onclose }) {
 
     return(
         <>
-            <div className='modal-overlay'>
-                <div className='form_container'>
+            <div className='modal__overlay'>
+                <div className='form__container'>
+                    <IoCloseCircle className='close__icon' onClick={onclose} />
                     <form onSubmit={controlarSubmissao} className='form'>
-                        <div className='container_tarefa'>
+                        <div className='container__tarefa'>
                             <label>Nome da tarefa</label>
-                            <input value={nome} onChange={(e) => setNome(e.target.value)} type="text" />
+                            <input className='tarefa__input' value={nome} onChange={(e) => setNome(e.target.value)} type="text" />
                         </div>
-                        <div className='container_tarefa'>
-                            <label>categoria</label>
-                            <input type="text" value={idCategoria} onChange={(e) => setIdCategoria(e.target.value)} />
+                        <div className='container__tarefa'>
+                            <label>Categoria</label>
+                            <input className='tarefa__input' type="text" value={idCategoria} onChange={(e) => setIdCategoria(e.target.value)} />
                         </div>
-                        <div className='container_tarefa'>
+                        <div className='container__tarefa'>
                             <label>Tempo (minutos)</label>
-                            <input type="number" value={tempo} onChange={(e) => setTempo(e.target.value)} />
+                            <input className='tarefa__input' type="number" value={tempo} onChange={(e) => setTempo(e.target.value)} />
                         </div>
 
-                        <button type='submit'>Criar tarefa</button>
+                        <Botao type='submit' >Criar tarefa</Botao>
+                        
 
                     </form>
                 </div>

@@ -112,6 +112,7 @@ export default function CardTarefa({}) {
                             tag={tarefa.categoria}
                             tempo={tarefa.tempo}
                             cor={'--details'}
+                            // cor={tarefa.cor}
                         />
                     ))) : (
                         <p>Sem tarefas cadastradas</p>
