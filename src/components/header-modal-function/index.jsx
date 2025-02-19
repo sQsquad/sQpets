@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ModalEvolucao from '../ModalEvolucao';
 import { keyframes } from 'styled-components'
 import ModalSequencia from '../Modais/ModalSequencia';
+import ModalEnergia from '../Modais/ModalEnergia';
 
 const breatheAnimation = keyframes`
  0% { top: -30%;}
@@ -48,7 +49,7 @@ export default function Modal({ iconName, closeModal }) {
             case 'pet':
                 return <ModalEvolucao></ModalEvolucao>;
             case 'energy':
-                return <p>Conteúdo do modal de energia</p>;
+                return <ModalEnergia />;
         }
     };
 
