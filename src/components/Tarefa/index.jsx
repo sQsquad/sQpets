@@ -51,14 +51,17 @@ const ContainerTempo = styled(TarefaCategoria)`
     width: fit-content;
 `
 
-export default function Tarefa({name, textLabel, tag, tempo, cor}) {
+export default function Tarefa({ name, textLabel, tag, tempo, cor }) {
+    const horas = Math.floor(tempo / 60);
+    const minutos = tempo % 60;
+    const tempoFormatado = `${String(horas).padStart(2, '0')}:${String(minutos).padStart(2, '0')}`;
     return (
         <TarefaContainer $cor={cor}>
-            <CheckboxContainer> 
-                <InputCheckbox type={"checkbox"} id={name} htmlFor={name} textLabel={textLabel}/>
+            <CheckboxContainer>
+                <InputCheckbox type={"checkbox"} id={name} htmlFor={name} textLabel={textLabel} />
             </CheckboxContainer>
             <TarefaCategoria $cor={cor}>{tag}</TarefaCategoria>
-            <ContainerTempo $cor={cor}>{tempo}</ContainerTempo>
+            <ContainerTempo $cor={cor}>{tempoFormatado}</ContainerTempo>
         </TarefaContainer>
     )
 }

@@ -1,19 +1,56 @@
-import './inputCheckbox.sass'
+import styled from 'styled-components'
 
-export default function InputCheckbox({name, type, textLabel}) {
+const CheckboxContainer = styled.div`
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+    max-width: 100%;
+    overflow: hidden;
+    `;
+
+const StyledInputCheckbox = styled.input`
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    
+    @media (max-width: 480px) {
+        width: 20px;
+        height: 20px;
+    }
+    `;
+
+const LabelWrapper = styled.div`
+    display: flex;
+    height: auto;
+    flex: 1;
+    min-width: 0;
+    `;
+
+const Label = styled.label`
+    display: block;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    color: ${(props) => props.theme['--details']};
+    font-family: ${(props) => props.theme['fonte']};
+    
+    @media (max-width: 480px) {
+        max-width: 80px;
+    }
+`;
+
+export default function InputCheckbox({ name, type, textLabel }) {
     return (
-        <div className='checkbox_container'>
-            <input 
-                className='input_checkbox'
-                type={type} 
-                id={name} 
-            />
-            <label
-                className='label'
-                htmlFor={name}
-            >
-                {textLabel}
-            </label>
-        </div>
+        <CheckboxContainer>
+            <StyledInputCheckbox type={type} id={name} />
+            <LabelWrapper>
+                <Label htmlFor={name}>{textLabel}</Label>
+            </LabelWrapper>
+        </CheckboxContainer>
     )
 }
